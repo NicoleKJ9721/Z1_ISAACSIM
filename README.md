@@ -1,6 +1,12 @@
 # Unitree Z1 Isaac Sim Extension (Z1 机械臂导入与控制扩展)
 
+<div align="center">
+  <img src="assets/demo.webm" width="800"/>
+</div>
+
 这是一个 Isaac Sim 的扩展 (Extension) 示例，用于演示如何**从源码构建**一个扩展，将宇树 (Unitree) Z1 机械臂导入仿真环境，并实现基于 RMPflow 的运动控制。
+
+> **⚠️ 注意**: Z1 机械臂的 RMPflow 跟随目标关节设定为 `gripperStator`（夹爪基座）。如果在运动过程中出现奇点或卡顿，通常是因为每个关节都严格遵循了与真机一致的硬限位 (Hard Limits)。
 
 ## 💻 本机开发环境
 本扩展是在以下环境中开发和测试的：
