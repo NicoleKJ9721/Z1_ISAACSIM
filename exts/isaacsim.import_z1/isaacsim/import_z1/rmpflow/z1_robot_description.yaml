@@ -1,0 +1,52 @@
+# Z1 robot description for RMPflow (Unitree Z1 with gripper)
+
+api_version: 1.0
+
+cspace:
+  - joint1
+  - joint2
+  - joint3
+  - joint4
+  - joint5
+  - joint6
+  - jointGripper
+
+root_link: world
+subtree_root_link: link00
+
+default_q: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+acceleration_limits: [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0]
+jerk_limits: [10000.0, 10000.0, 10000.0, 10000.0, 10000.0, 10000.0, 10000.0]
+
+cspace_to_urdf_rules: []
+
+collision_spheres:
+  - link00:
+      - center: [0.0, 0.0, 0.03]
+        radius: 0.05
+  - link01:
+      - center: [0.0, 0.0, 0.05]
+        radius: 0.06
+  - link02:
+      - center: [-0.15, 0.0, 0.0]
+        radius: 0.06
+  - link03:
+      - center: [0.15, 0.0, 0.05]
+        radius: 0.06
+  - link04:
+      - center: [0.05, 0.0, 0.0]
+        radius: 0.05
+  - link05:
+      - center: [0.03, 0.0, 0.0]
+        radius: 0.05
+  - link06:
+      - center: [0.03, 0.0, 0.0]
+        radius: 0.05
+  - gripperStator:
+      - center: [0.05, 0.0, 0.0]
+        radius: 0.04
+  - gripperMover:
+      - center: [0.08, 0.0, 0.0]
+        radius: 0.04
+

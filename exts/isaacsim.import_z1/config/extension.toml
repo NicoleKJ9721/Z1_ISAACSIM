@@ -1,0 +1,16 @@
+[package]
+version = "1.0.0"
+category = "Examples"
+title = "Unitree Z1 Import"
+description = "Import Unitree Z1 robot with RMPflow"
+authors = ["Unitree", "User"]
+repository = ""
+keywords = ["isaac_sim", "robot", "z1", "urdf"]
+
+[dependencies]
+"isaacsim.asset.importer.urdf" = {}
+"isaacsim.robot_motion.motion_generation" = {}
+
+[[python.module]]
+name = "isaacsim.import_z1"
+
